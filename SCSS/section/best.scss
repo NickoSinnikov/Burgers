@@ -1,0 +1,70 @@
+.best {
+  background-image: url(../../Image/background/second_slide.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__best {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.best__content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: center;
+  padding-bottom: 15%;
+}
+
+.section__title--best {
+  font-family: "Gagalin-Reg";
+  font-size: rem(72px);
+  color: $dark;
+  line-height: 1.42;
+  margin: 0;
+  padding-top: 60px;
+  font-weight: 300;
+}
+
+.best__list {
+  display: flex;
+  flex-direction: row;
+} 
+.content__col {
+  margin-left: 30px;
+  text-align: center;
+  &:last-child {
+    margin-left: 0;
+  }
+}
+.col__title {
+  font-family: "Lifehack";
+  font-size: rem(24px);
+  color: $dark;
+  letter-spacing: -0.5px;
+}
+
+.col__desc {
+  font-family: "Ubuntu-Light";
+  font-size: 14px;
+  opacity: 0.7;
+  line-height: 1.42;
+}
+
+.svg_meet{
+  border: 1px solid black;
+}
+
+.svg_meet2{
+  border: 1px solid black;
+}

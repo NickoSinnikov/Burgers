@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Ubuntu-Med";
+  src: url(../Fonts/Ubuntu/Ubuntu-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Ubuntu-Reg";
+  src: url(../Fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url(../Fonts/Ubuntu/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Ubuntu-Light";
+  src: url(../Fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+
+@font-face {
+  font-family: "Gagalin-Reg";
+  src: url(../Fonts/Gagalin-Regular.otf);
+}
+
+@font-face {
+  font-family: "Lifehack";
+  src: url(../Fonts/Lifehack.otf);
+} ;

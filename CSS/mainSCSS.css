@@ -1,0 +1,318 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Ubuntu-Med";
+  src: url(../../Fonts/Ubuntu/Ubuntu-Medium.ttf);
+}
+@font-face {
+  font-family: "Ubuntu-Reg";
+  src: url(../../Fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url(../../Fonts/Ubuntu/Ubuntu-Bold.ttf);
+}
+@font-face {
+  font-family: "Ubuntu-Light";
+  src: url(../../Fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+@font-face {
+  font-family: "Gagalin-Reg";
+  src: url(../../Fonts/Gagalin-Regular.otf);
+}
+@font-face {
+  font-family: "Lifehack";
+  src: url(../../Fonts/Lifehack-Medium.otf);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Ubuntu-Reg", Arial, Helvetica, sans-serif;
+  line-height: 1.42;
+  color: #2f3234;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  position: relative;
+}
+
+.maincontent {
+  height: 100%;
+  min-height: 650px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.31);
+  min-width: 943px;
+  min-height: 650px;
+}
+
+.button__menu {
+  min-width: 6.125rem;
+  padding: 10px 17px;
+  border-radius: 5px;
+  background-color: #e25028;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.42;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.button__menu:hover {
+  background-color: #bd3d1a;
+}
+
+.hero {
+  background-image: url(../../Image/background/first_slide.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+}
+
+header {
+  width: 100%;
+  height: 93px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  text-align: center;
+  align-items: center;
+}
+
+.header__icon {
+  /* Прибили лого к правому краю */
+  order: 0;
+  margin-right: auto;
+}
+
+/* =====================================
+Меню сайта */
+.nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.nav__item:after {
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  background-color: #fff;
+  margin: 0 12px;
+}
+.nav__item:last-child::after {
+  display: none;
+}
+
+.nav__link {
+  display: inline-block;
+  color: #fff;
+  line-height: 1.42;
+  font-family: "Ubuntu-Reg";
+  font-size: 13px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  transition: 0.5s;
+}
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.header__button {
+  margin-left: 12px;
+}
+
+/*===================================
+  Контент */
+.container__hero {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: center;
+  padding-bottom: 15%;
+}
+
+.hero__image,
+.hero__text {
+  display: flex;
+  flex-basis: 50%;
+}
+
+.hero__text {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section__title {
+  font-family: "Gagalin-Reg";
+  font-size: 4.5rem;
+  color: #f9b43b;
+  line-height: 1.42;
+  margin: 0;
+  padding-top: 60px;
+  font-weight: 300;
+}
+
+.hero__text p {
+  font-family: "Lifehack";
+  font-size: 4.0625rem;
+  text-transform: lowercase;
+  line-height: 1;
+  color: white;
+  font-weight: 400;
+}
+
+.best {
+  background-image: url(../../Image/background/second_slide.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__best {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.best__content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: center;
+  padding-bottom: 15%;
+}
+
+.section__title--best {
+  font-family: "Gagalin-Reg";
+  font-size: 4.5rem;
+  color: #2f3234;
+  line-height: 1.42;
+  margin: 0;
+  padding-top: 60px;
+  font-weight: 300;
+}
+
+.best__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.content__col {
+  margin-left: 30px;
+  text-align: center;
+}
+.content__col:last-child {
+  margin-left: 0;
+}
+
+.col__title {
+  font-family: "Lifehack";
+  font-size: 1.5rem;
+  color: #2f3234;
+  letter-spacing: -0.5px;
+}
+
+.col__desc {
+  font-family: "Ubuntu-Light";
+  font-size: 14px;
+  opacity: 0.7;
+  line-height: 1.42;
+}
+
+.svg_meet {
+  border: 1px solid black;
+}
+
+.svg_meet2 {
+  border: 1px solid black;
+}
+/*# sourceMappingURL=mainSCSS.css.map */

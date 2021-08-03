@@ -1,0 +1,67 @@
+body {
+  //обнуляем margin и padding
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  font-family: "Ubuntu-Reg", Arial, Helvetica, sans-serif;
+  line-height: 1.42;
+  color: $dark;
+  //сглаживание дял браузеров хром и мозила
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// указываем чтобы ширина блока включала в себя паддинг
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+// сбрасываем настройки списков
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+// Так бывает, что в макете сайта не предусмотрены видимые текстовые заголовки блоков,
+//названия кнопок или других интерактивных элементов.
+//Например, на кнопке, которая добавляет товар в корзину,
+//нарисована только иконка корзинки без текстового сопровождения.
+//Зрячему человеку этого достаточно, чтобы успешно взаимодействовать с интерфейсом.
+
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
