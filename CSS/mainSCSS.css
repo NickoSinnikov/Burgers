@@ -32,6 +32,7 @@ body {
   color: #2f3234;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 *,
@@ -314,5 +315,68 @@ header {
 
 .svg_meet2 {
   border: 1px solid black;
+}
+
+.reviews__block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.review {
+  width: 25%;
+  height: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.review:active {
+  filter: brightness(50%);
+}
+
+.review__photo {
+  width: 100%;
+  height: 100%;
+}
+
+.review__img {
+  filter: saturate(0%);
+  width: 100%;
+  height: 100%;
+}
+
+.review__content {
+  position: absolute;
+  top: 0;
+  padding: 50px 20px 0 20px;
+  color: white;
+  font-size: 14px;
+  line-height: 1.71;
+  font-family: "Ubuntu-Light";
+  cursor: pointer;
+}
+
+.review__author {
+  margin-bottom: 30px;
+  font-family: "Gagalin-Reg";
+  font-size: 14px;
+}
+
+.review__button {
+  width: 110px;
+  height: 35px;
+  background-color: #2f3234;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Ubuntu-Med";
+  color: white;
+  cursor: pointer;
+}
+
+.review__button:hover {
+  background-color: #1f2122;
 }
 /*# sourceMappingURL=mainSCSS.css.map */
